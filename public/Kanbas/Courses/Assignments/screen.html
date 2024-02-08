@@ -1,196 +1,424 @@
-<table width="100%">
-    <tr>
-        <td valign="top">
-            <ul>
-                <li><a href="/Kanbas/Account/Profile/screen.html">
-                        Account</a></li>
-                <li>
-                    <a href="#">Dashboard</a>
-                </li>
-                <li>
-                    <a href="/Kanbas/Courses/Home/screen.html">Courses</a>
-                </li>
-                <li>
-                    <a href="#">Calendar</a>
-                </li>
-                <li><a href="#">Inbox</a></li>
-                <li><a href="#">History</a></li>
-                <li><a href="#">Studio</a></li>
-                <li><a href="#">Commons</a></li>
-                <li><a href="#">Help</a></li>
-            </ul>
-        </td>
-        <td valign="top">
-            <ul>
-                <li>
-                    <a href="/Kanbas/Courses/Home/screen.html">
-                        Home</a>
-                </li>
-                <li><a href="#">
-                        Modules</a>
-                </li>
-                <li><a href="#">
-                        Piazza</a>
-                </li>
-                <li><a href="#">Zoom Meeting</a></li>
-                <li><a href="/Kanbas/Courses/Assignments/screen.html">
-                        Assignments</a>
-                </li>
-                <li><a href="#">Quizzes</a></li>
-                <li><a href="/Kanbas/Courses/Grades/screen.html">
-                        Grades</a>
-                </li>
-                <li><a href="#">People</a></li>
-                <li><a href="#">Panopto Video</a></li>
-                <li><a href="#">Discussions</a></li>
-                <li><a href="#">Announcements</a></li>
-                <li><a href="#">Pages</a></li>
-                <li><a href="#">Files</a></li>
-                <li><a href="#">Rubrics</a></li>
-                <li><a href="#">Outcomes</a></li>
-                <li><a href="#">Collaborations</a></li>
-                <li><a href="#">Syllabus</a></li>
-                <li><a href="/Kanbas/Courses/Settings/CourseDetails/screen.html">Settings</a></li>
-            </ul>
-        </td>
-        <td valign="top">
-            <input placeholder="Search for Assignments" type="text" />
-            <button>Group</button>
-            <button>Assignment</button>
-            <select>
-                <option>Edit Assignment Dates</option>
-            </select>
+<!DOCTYPE html>
+<html lang="en">
 
-            <h3>ASSIGNMENTS 40% of Total
-                <select>
-                    <option selected>Edit</option>
-                    <option>Speed Grader</option>
-                    <option>Duplicate</option>
-                    <option>Delete</option>
-                    <option>Move To...</option>
-                    <option>Send To...</option>
-                    <option>Copy To...</option>
-                    <option>Share to Commons</option>
-                </select>
-            </h3>
-            <ul>
-                <li>
-                    <a href="/Kanbas/Courses/Assignments/Edit/screen.html">A1 - ENV + HTML</a>
-                    <br />
-                    <a href="#">Multiple Modules</a> | Not available yet
-                </li>
-                <li>
-                    <a href="/Kanbas/Courses/Assignments/Edit/screen.html">A2 - CSS + BOOTSTRAP</a>
-                    <br />
-                    <a href="#">Multiple Modules</a> | Not available yet
-                </li>
-                <li>
-                    <a href="/Kanbas/Courses/Assignments/Edit/screen.html">A3 - JS + REACT</a>
-                    <br />
-                    <a href="#">Multiple Modules</a> | Not available yet
-                </li>
-                <li>
-                    <a href="/Kanbas/Courses/Assignments/Edit/screen.html">A4 - STATE + REDUX</a>
-                    <br />
-                    <a href="#">Multiple Modules</a> | Not available yet
-                </li>
-                <li>
-                    <a href="/Kanbas/Courses/Assignments/Edit/screen.html">A5 - NODE + SESSION</a>
-                    <br />
-                    <a href="#">Multiple Modules</a> | Not available yet
-                </li>
-                <li>
-                    <a href="/Kanbas/Courses/Assignments/Edit/screen.html">A6 - MONGO + MONGOOSE</a>
-                    <br />
-                    <a href="#">Multiple Modules</a> | Not available yet
-                </li>
-            </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assignment</title>
+  <link rel="stylesheet" href="./index.css" />
+  <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
+  <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
+  <link href="/public/styles.css" rel="stylesheet" />
+  <link href="/libs/bootstrap/bootstrap.min.css" rel="stylesheet" />
+  <link href="/libs/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
 
-            <h3>QUIZZES 10% of Total
-                <select>
-                    <option selected>Edit</option>
-                    <option>Speed Grader</option>
-                    <option>Duplicate</option>
-                    <option>Delete</option>
-                    <option>Move To...</option>
-                    <option>Send To...</option>
-                    <option>Copy To...</option>
-                    <option>Share to Commons</option>
-                </select>
-            </h3>
-            <ul>
-                <li>
-                    <a href="#">Q1 - HTML</a>
-                    <br />
-                    <a href="#">Multiple Modules</a> | Not available yet
-                </li>
-                <li>
-                    <a href="#">Q2 - CSS</a>
-                    <br />
-                    <a href="#">Multiple Modules</a> | Not available yet
-                </li>
-                <li>
-                    <a href="#">Q3 - JS,ES6</a>
-                    <br />
-                    <a href="#">Multiple Modules</a> | Not available yet
-                </li>
-                <li>
-                    <a href="#">Q1 - NODE</a>
-                    <br />
-                    <a href="#">Multiple Modules</a> | Not available yet
-                </li>
-                <li>
-                    <a href="#">Q1 - MONGO</a>
-                    <br />
-                    <a href="#">Multiple Modules</a> | Not available yet
-                </li>
-            </ul>
+</head>
 
-            <h3>EXAMS 20% of Total
-                <select>
-                    <option selected>Edit</option>
-                    <option>Speed Grader</option>
-                    <option>Duplicate</option>
-                    <option>Delete</option>
-                    <option>Move To...</option>
-                    <option>Send To...</option>
-                    <option>Copy To...</option>
-                    <option>Share to Commons</option>
-                </select>
-            </h3>
-            <ul>
-                <li>
-                    <a href="#">Midterm</a>
-                    <br />
-                    <a href="#">Multiple Modules</a> | Not available yet
-                </li>
-                <li>
-                    <a href="#">Final</a>
-                    <br />
-                    <a href="#">Multiple Modules</a> | Not available yet
-                </li>
+<body>
+  <div class="container ms-0 ps-0 me-0 pe-0">
+    <div class="row">
+      <div class="col-1 wd-bg-black pe-0 d-none d-md-block" style="width: 97px; background-color: black">
+        <ul class="sidebar">
+          <li class="pt-0">
+            <a href="http://northeastern.edu">
+              <img src="/Kanbas/Images/NeuLogo.png" alt="Neu Logo" class="img-thumbnail ps-0 pe-0" style="
+                  background-color: black;
+                  border: none;
+                  height: 60px;
+                  width: 97px;
+                " /></a>
+          </li>
+          <li>
+            <a href="/Kanbas/Account/Profile/screen.html">
+              <i class="fa fa-user" style="font-size: 25px; color: white"></i><br />
+              Account</a>
+          </li>
+          <li>
+            <a href="/Kanbas/Dashboard/screen.html">
+              <i class="fa fa-tachometer" style="color: red; font-size: 25px"></i><br />
+              Dashboard</a>
+          </li>
+          <li class="active">
+            <a href="/Kanbas/Courses/Home/screen.html">
+              <i class="fa fa-book" style="color: red; font-size: 25px"></i><br />
+              Courses</a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-calendar" style="color: red; font-size: 25px"></i><br />
+              Calendar</a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-inbox" style="color: red; font-size: 25px"></i><br />
+              Inbox</a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-clock-o" style="color: red; font-size: 25px"></i><br />
+              History</a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-cloud-upload" style="color: red; font-size: 25px"></i><br />
+              Studio</a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-cubes" style="color: red; font-size: 25px"></i><br />
+              Commons</a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-question-circle" style="color: red; font-size: 25px"></i><br />Help</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col">
+        <div class="d-block d-md-none wd-course-navigation-sm-size">
+          <div class="row">
+            <div class="col-2">
+              <a href="/Kanbas/KanbasNavigation/screen.html"><i class="fa fa-bars fs-2"></i></a>
+            </div>
+            <div class="col-8">CS5610 Web Development</div>
+            <div class="col-2">
+              <a href="/Kanbas/Courses/CourseNavigation/screen.html"><i class="fa fa-chevron-down fs-2"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="row fs-4 mt-2 ps-0 pb-0 d-none d-md-block">
+          <nav style="--bs-breadcrumb-divider: '>'; padding-left: 25px" aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0">
+              <li class="me-4">
+                <a href="#">
+                  <i class="fa fa-bars" style="color: #000000"></i></a>
+              </li>
+              <li class="breadcrumb-item">
+                <a class="text-decoration-none text-danger" href="#">CS5610 Web Development</a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Assignment
+              </li>
+            </ol>
+          </nav>
+        </div>
+        <hr style="margin-left: 15px" />
+        <div class="row">
+          <div class="col-2 d-none d-md-block text-wrap me-5" style="padding-left: 25px">
+            <ul class="wd-course-navigation">
+              <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
+              <li><a href="#">Module</a></li>
+              <li><a href="#">Piazza</a></li>
+              <li><a href="#">Zoom Meetings</a></li>
+              <li class="active">
+                <a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a>
+              </li>
+              <li><a href="#">Quizzes</a></li>
+              <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
+              <li><a href="#">People</a></li>
+              <li><a href="#">Panopto Video</a></li>
+              <li>
+                <a href="#">Discussions
+                  <i class="fa fa-eye-slash float-end"></i></a>
+              </li>
+              <li>
+                <a href="#">Announcements
+                  <i class="fa fa-eye-slash float-end"></i></a>
+              </li>
+              <li>
+                <a href="#">Pages <i class="fa fa-eye-slash float-end"></i></a>
+              </li>
+              <li>
+                <a href="#">Files <i class="fa fa-eye-slash float-end"></i></a>
+              </li>
+              <li>
+                <a href="#">Rubrics <i class="fa fa-eye-slash float-end"></i></a>
+              </li>
+              <li>
+                <a href="#">Outcomes <i class="fa fa-eye-slash float-end"></i></a>
+              </li>
+              <li>
+                <a href="#">Collaborations
+                  <i class="fa fa-eye-slash float-end"></i></a>
+              </li>
+              <li><a href="#">Syllabus</a></li>
+              <li>
+                <a href="/Kanbas/Courses/Settings/CourseDetails/screen.html">Settings</a>
+              </li>
             </ul>
+          </div>
 
-            <h3>PROJECT 30% of Total
-                <select>
-                    <option selected>Edit</option>
-                    <option>Speed Grader</option>
-                    <option>Duplicate</option>
-                    <option>Delete</option>
-                    <option>Move To...</option>
-                    <option>Send To...</option>
-                    <option>Copy To...</option>
-                    <option>Share to Commons</option>
-                </select>
-            </h3>
-            <ul>
-                <li>
-                    <a href="#">Project</a>
+          <div class="col">
+            <div class="container pe-0 me-0 ps-0 ms-0">
+              <div class="row pt-3 pb-1 ms-0 ps-0">
+                <div class="col" style="margin-left: -23px">
+                  <input type="text" placeholder="Search For Assignments" class="form-control w-50 ms-0" />
+                </div>
+                <div class="col">
+                  <a class="btn btn-secondary float-end ms-1">
+                    <i class="fa fa-ellipsis-v ms-1"></i>
+                  </a>
+                  <button type="button" class="btn btn-danger float-end ms-1">
+                    <i class="fa fa-plus"></i>
+                    Assignment
+                  </button>
+                  <button type="button" class="float-end btn btn-secondary">
+                    <i class="fa fa-plus" style="color: #ffffff"></i>
+                    Group
+                  </button>
+                </div>
+              </div>
+            </div>
+            <hr class="hr-grow" />
+            <div class="row">
+              <ul class="list-group">
+                <div class="col-12">
+                  <li class="list-group-item list-group-item-secondary">
+                    <h4>
+                      <i class="fa fa-ellipsis-v"></i>
+                      ASSIGNMENTS
+                      <div class="float-end pt-2">
+                        <i class="fa fa-ellipsis-v" style="color: #434447"></i>
+                      </div>
+                      <div class="float-end me-4 ms-2">
+                        <i class="fa fa-plus pt-2" style="color: #878885"></i>
+                      </div>
+                      <label class="border border-dark rounded-pill float-end p-1">
+                        40% of Total
+                      </label>
+                    </h4>
+                  </li>
+                </div>
+                <div class="col-12 border-start border-3 border-success assignment-table">
+                  <li class="list-group-item">
+                    <i class="fa fa-ellipsis-v float-end fs-5" style="color: #050505; margin-top: 4%"></i>
+                    <i class="fa fa-check-circle float-end me-3 fs-5 text-success" style="margin-top: 4%"></i>
+                    <i class="fa fa-ellipsis-v float-start me-3 fs-5" style="color: black; margin-top: 4%"></i>
+
+                    <i class="fa fa-edit float-start me-3 fs-5 text-success" style="color: black; margin-top: 4%"></i>
+
+                    <a href="/Kanbas/Courses/Assignments/Edit/screen.html" class="fs-5">A1 - ENV + HTML</a>
                     <br />
-                    <a href="#">Multiple Modules</a> | Not available yet
-                </li>
-            </ul>
+                    <p>
+                      Week 1 HTML - Week Starting on Monday September 5th
+                      (9/5/2023) Module | <br />
+                      Due Sep 18th 2023 at 11.59pm | 100 pts
+                    </p>
+                  </li>
+                  <li class="list-group-item">
+                    <i class="fa fa-ellipsis-v float-end fs-5" style="color: #050505; margin-top: 4%"></i>
+                    <i class="fa fa-check-circle float-end me-3 fs-5 text-success" style="margin-top: 4%"></i>
+                    <i class="fa fa-ellipsis-v float-start me-3 fs-5" style="color: black; margin-top: 4%"></i>
 
-        </td>
-    </tr>
-</table>
+                    <i class="fa fa-edit float-start me-3 fs-5 text-success" style="color: black; margin-top: 4%"></i>
+                    <a href="/Kanbas/Courses/Assignments/Edit/screen.html" class="fs-5">A2 - CSS + BOOTSTRAP</a>
+                    <br />
+                    <p>
+                      Week 2 CSS - Week Starting on Monday September 19th
+                      (9/19/2023) Module | <br />
+                      Due Oct 2, 2023 at 11.59pm | 100 pts
+                    </p>
+                  </li>
+                  <li class="list-group-item">
+                    <i class="fa fa-ellipsis-v float-end fs-5" style="color: #050505; margin-top: 4%"></i>
+                    <i class="fa fa-check-circle float-end me-3 fs-5 text-success" style="margin-top: 4%"></i>
+                    <i class="fa fa-ellipsis-v float-start me-3 fs-5" style="color: black; margin-top: 4%"></i>
+
+                    <i class="fa fa-edit float-start me-3 fs-5 text-success" style="color: black; margin-top: 4%"></i>
+                    <a href="/Kanbas/Courses/Assignments/Edit/screen.html" class="fs-5">A3 - JS + REACT</a>
+                    <br />
+                    <p>
+                      Week 3 Bootstrap - Week Starting on Monday September
+                      26th (9/26/2023) Module | <br />
+                      Due Oct 10, 2023 at 11.59pm | 100 pts
+                    </p>
+                  </li>
+                  <li class="list-group-item">
+                    <i class="fa fa-ellipsis-v float-end fs-5" style="color: #050505; margin-top: 4%"></i>
+                    <i class="fa fa-check-circle float-end me-3 fs-5 text-success" style="margin-top: 4%"></i>
+                    <i class="fa fa-ellipsis-v float-start me-3 fs-5" style="color: black; margin-top: 4%"></i>
+
+                    <i class="fa fa-edit float-start me-3 fs-5 text-success" style="color: black; margin-top: 4%"></i>
+                    <a href="/Kanbas/Courses/Assignments/Edit/screen.html" class="fs-5">A4 - STATE + REDUX</a>
+                    <br />
+                    <p>
+                      Week 4 Javascript - Week Starting on Monday October 3rd
+                      (10/03/2023) Module | <br />
+                      Due Oct 16, 2023 at 11.59pm | 100 pts
+                    </p>
+                  </li>
+                  <li class="list-group-item">
+                    <i class="fa fa-ellipsis-v float-end fs-5" style="color: #050505; margin-top: 4%"></i>
+                    <i class="fa fa-check-circle float-end me-3 fs-5 text-success" style="margin-top: 4%"></i>
+                    <i class="fa fa-ellipsis-v float-start me-3 fs-5" style="color: black; margin-top: 4%"></i>
+
+                    <i class="fa fa-edit float-start me-3 fs-5 text-success" style="color: black; margin-top: 4%"></i>
+                    <a href="/Kanbas/Courses/Assignments/Edit/screen.html" class="fs-5">A5 - NODE + SESSION</a>
+                    <br />
+                    <p>
+                      Week 5 React - Week Starting on October 10th
+                      (10/10/2023) Module | <br />
+                      Due Oct 23, 2023 at 11.59pm | 100 pts
+                    </p>
+                  </li>
+                  <li class="list-group-item">
+                    <i class="fa fa-ellipsis-v float-end fs-5" style="color: #050505; margin-top: 4%"></i>
+                    <i class="fa fa-check-circle float-end me-3 fs-5 text-success" style="margin-top: 4%"></i>
+                    <i class="fa fa-ellipsis-v float-start me-3 fs-5" style="color: black; margin-top: 4%"></i>
+
+                    <i class="fa fa-edit float-start me-3 fs-5 text-success" style="color: black; margin-top: 4%"></i>
+                    <a href="/Kanbas/Courses/Assignments/Edit/screen.html" class="fs-5">A6 - MONGO + MONGOOSE</a>
+                    <br />
+                    <p>
+                      Week 6 Mongo - Week Starting on October 17th
+                      (10/17/2023) Module | <br />
+                      Due Oct 30, 2023 at 11.59pm | 100 pts
+                    </p>
+                  </li>
+                </div>
+              </ul>
+
+              <ul class="list-group mt-5">
+                <li class="list-group-item list-group-item-secondary">
+                  <h3>
+                    QUIZZES
+                    <div class="float-end pt-2">
+                      <i class="fa fa-ellipsis-v" style="color: #434447"></i>
+                    </div>
+                    <div class="float-end me-4 ms-2">
+                      <i class="fa fa-plus pt-2" style="color: #878885"></i>
+                    </div>
+                    <label class="border border-dark rounded-pill float-end p-1">10% of Total</label>
+                  </h3>
+                </li>
+                <div class="col-12 border-start border-3 border-success assignment-table">
+                  <li class="list-group-item">
+                    <i class="fa fa-ellipsis-v float-end fs-5" style="color: #050505; margin-top: 2%"></i>
+                    <i class="fa fa-check-circle float-end me-3 fs-5 text-success" style="margin-top: 2%"></i>
+                    <i class="fa fa-ellipsis-v float-start me-3 fs-5" style="color: black; margin-top: 2%"></i>
+
+                    <i class="fa fa-edit float-start me-3 fs-5 text-success" style="color: black; margin-top: 2%"></i>
+                    <a href="#" class="fs-5">Q1 - HTML</a><br />
+                    <a href="#">Multiple Modules</a>
+                    | Not available yet
+                  </li>
+
+                  <li class="list-group-item">
+                    <i class="fa fa-ellipsis-v float-end fs-5" style="color: #050505; margin-top: 2%"></i>
+                    <i class="fa fa-check-circle float-end me-3 fs-5 text-success" style="margin-top: 2%"></i>
+                    <i class="fa fa-ellipsis-v float-start me-3 fs-5" style="color: black; margin-top: 2%"></i>
+
+                    <i class="fa fa-edit float-start me-3 fs-5 text-success" style="color: black; margin-top: 2%"></i>
+                    <a href="#" class="fs-5">Q2 - CSS</a><br />
+                    <a href="#">Multiple Modules</a>
+                    | Not available yet
+                  </li>
+
+                  <li class="list-group-item">
+                    <i class="fa fa-ellipsis-v float-end fs-5" style="color: #050505; margin-top: 2%"></i>
+                    <i class="fa fa-check-circle float-end me-3 fs-5 text-success" style="margin-top: 2%"></i>
+                    <i class="fa fa-ellipsis-v float-start me-3 fs-5" style="color: black; margin-top: 2%"></i>
+
+                    <i class="fa fa-edit float-start me-3 fs-5 text-success" style="color: black; margin-top: 2%"></i>
+                    <a href="#" class="fs-5">Q3 - JS, ES6</a><br />
+                    <a href="#">Multiple Modules</a>
+                    | Not available yet
+                  </li>
+
+                  <li class="list-group-item">
+                    <i class="fa fa-ellipsis-v float-end fs-5" style="color: #050505; margin-top: 2%"></i>
+                    <i class="fa fa-check-circle float-end me-3 fs-5 text-success" style="margin-top: 2%"></i>
+                    <i class="fa fa-ellipsis-v float-start me-3 fs-5" style="color: black; margin-top: 2%"></i>
+
+                    <i class="fa fa-edit float-start me-3 fs-5 text-success" style="color: black; margin-top: 2%"></i>
+                    <a href="#" class="fs-5">Q4 - NODE</a><br />
+                    <a href="#">Multiple Modules</a>
+                    | Not available yet
+                  </li>
+
+                  <li class="list-group-item">
+                    <i class="fa fa-ellipsis-v float-end fs-5" style="color: #050505; margin-top: 2%"></i>
+                    <i class="fa fa-check-circle float-end me-3 fs-5 text-success" style="margin-top: 2%"></i>
+                    <i class="fa fa-ellipsis-v float-start me-3 fs-5" style="color: black; margin-top: 2%"></i>
+
+                    <i class="fa fa-edit float-start me-3 fs-5 text-success" style="color: black; margin-top: 2%"></i>
+                    <a href="#" class="fs-5">Q5 - MONGO</a><br />
+                    <a href="#">Multiple Modules</a>
+                    | Not available yet
+                  </li>
+                </div>
+              </ul>
+
+              <ul class="list-group mt-5">
+                <li class="list-group-item list-group-item-secondary">
+                  <h3>
+                    <div class="float-end pt-2">
+                      <i class="fa fa-ellipsis-v" style="color: #434447"></i>
+                    </div>
+                    <div class="float-end me-4 ms-2">
+                      <i class="fa fa-plus pt-2" style="color: #878885"></i>
+                    </div>
+                    EXAMS
+                    <label class="border border-dark rounded-pill float-end p-1">10% of Total</label>
+                  </h3>
+                </li>
+                <div class="col-12 border-start border-3 border-success assignment-table">
+                  <li class="list-group-item">
+                    <i class="fa fa-ellipsis-v float-end fs-5" style="color: #050505; margin-top: 2%"></i>
+                    <i class="fa fa-check-circle float-end me-3 fs-5 text-success" style="margin-top: 2%"></i>
+                    <i class="fa fa-ellipsis-v float-start me-3 fs-5" style="color: black; margin-top: 2%"></i>
+
+                    <i class="fa fa-edit float-start me-3 fs-5 text-success" style="color: black; margin-top: 2%"></i>
+                    <a href="#" class="fs-5">Midterm</a><br />
+                    <a href="#">Multiple Modules</a>
+                    | Not available yet
+                  </li>
+
+                  <li class="list-group-item">
+                    <i class="fa fa-ellipsis-v float-end fs-5" style="color: #050505; margin-top: 2%"></i>
+                    <i class="fa fa-check-circle float-end me-3 fs-5 text-success" style="margin-top: 2%"></i>
+                    <i class="fa fa-ellipsis-v float-start me-3 fs-5" style="color: black; margin-top: 2%"></i>
+
+                    <i class="fa fa-edit float-start me-3 fs-5 text-success" style="color: black; margin-top: 2%"></i>
+                    <a href="#" class="fs-5">Final</a><br />
+                    <a href="#">Multiple Modules</a>
+                    | Not available yet
+                  </li>
+                </div>
+              </ul>
+
+              <ul class="list-group mt-5">
+                <li class="list-group-item list-group-item-secondary">
+                  <h3>
+                    <div class="float-end pt-2">
+                      <i class="fa fa-ellipsis-v" style="color: #434447"></i>
+                    </div>
+                    <div class="float-end me-4 ms-2">
+                      <i class="fa fa-plus pt-2" style="color: #878885"></i>
+                    </div>
+                    PROJECT
+                    <label class="border border-dark rounded-pill float-end p-1">30% of Total</label>
+                  </h3>
+                </li>
+                <div class="col-12 border-start border-3 border-success assignment-table">
+                  <li class="list-group-item">
+                    <i class="fa fa-ellipsis-v float-end fs-5" style="color: #050505; margin-top: 2%"></i>
+                    <i class="fa fa-check-circle float-end me-3 fs-5 text-success" style="margin-top: 2%"></i>
+                    <i class="fa fa-ellipsis-v float-start me-3 fs-5" style="color: black; margin-top: 2%"></i>
+
+                    <i class="fa fa-edit float-start me-3 fs-5 text-success" style="color: black; margin-top: 2%"></i>
+                    <a href="#" class="fs-5">Project</a><br />
+                    <a href="#">Multiple Modules</a>
+                    | Not available yet
+                  </li>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
