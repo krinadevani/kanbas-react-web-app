@@ -101,11 +101,48 @@ function Grades() {
       <Toolbar />
       <SearchBar />
       <FilterButton />
-      <div className="table-responsive">
-        <table className="table">
+      {/* <div className="table-responsive">
+        <table className="table table-striped table-bordered align-middle text-center fixed-width-table">
           <thead>
-            <th>Student Name</th>
-            {as.map((assignment) => (<th>{assignment.title}</th>))}
+            <tr className="align-middle">
+              <th>Student Name</th>
+              {assignments.map((assignment) => (
+                <th>{assignment.title}</th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {enrollments.map((enrollment) => {
+              const user = users.find(
+                (user) => user._id === enrollment.user
+              );
+              return (
+                <tr>
+                  <td>
+                    {user?.firstName} {user?.lastName}
+                  </td>
+                  {assignments.map((assignment) => {
+                    const grade = grades.find(
+                      (grade) =>
+                        grade.student === enrollment.user &&
+                        grade.assignment === assignment._id
+                    );
+                    return <td>{grade?.grade || ""}</td>;
+                  })}
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div> */}
+      <div className="table-responsive">
+      <table className="table table-striped table-bordered align-middle text-center fixed-width-table">
+          <thead>
+            <tr className="align-middle">
+              <th>Student Name</th>
+              {as.map((assignment) => (<th>{assignment.title}</th>))}
+            </tr>
+           
           </thead>
           <tbody>
             {es.map((enrollment) => {
@@ -116,10 +153,12 @@ function Grades() {
                    {assignments.map((assignment) => {
                      const grade = grades.find(
                        (grade) => grade.student === enrollment.user && grade.assignment === assignment._id);
-                       return (<td>{grade?.grade || ""}</td>);})}
+                       return grade?.grade && (<td>{grade?.grade}</td>);})}
                 </tr>);
             })}
           </tbody></table>
-      </div></div>);
+      </div>
+      
+      </div>);
 }
 export default Grades;
