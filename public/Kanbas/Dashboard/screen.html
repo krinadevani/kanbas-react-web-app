@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>dashboard</title>
+  <link href="../../styles.css" rel="stylesheet" />
+  <link href="../Navigation/index.css" rel="stylesheet" />
+  <link href="../Courses/Navigation/index.css" rel="stylesheet" />
+  <link href="./index.css" rel="stylesheet" />
+  <!-- <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      rel="stylesheet"
+    /> -->
+  <link href="/libs/bootstrap/bootstrap.min.css" rel="stylesheet" />
+  <link href="/libs/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container pe-0 ps-0 ms-0">
+    <div class="row">
+      <div class="col-1 wd-bg-black pe-0 d-none d-md-block" style="width: 97px; background-color: black">
+        <ul class="sidebar">
+          <li class="pt-0">
+            <a href="http://northeastern.edu">
+              <img src="../Images/NeuLogo.png" alt="Neu Logo" class="img-thumbnail ps-0 pe-0" style="
+                    background-color: black;
+                    border: none;
+                    height: 60px;
+                    width: 70px;
+                  " /></a>
+          </li>
+          <li>
+            <a href="../Account/Profile/screen.html">
+              <i class="fa fa-user" style="font-size: 25px; color: white"></i><br />
+              Account</a>
+          </li>
+          <li class="active">
+            <a href="../Dashboard/screen.html">
+              <i class="fa fa-tachometer" style="color: red; font-size: 25px"></i><br />
+              Dashboard</a>
+          </li>
+          <li>
+            <a href="../Courses/Home/screen.html">
+              <i class="fa fa-book" style="color: red; font-size: 25px"></i><br />
+              Courses</a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-calendar" style="color: red; font-size: 25px"></i><br />
+              Calendar</a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-inbox" style="color: red; font-size: 25px"></i><br />
+              Inbox</a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-clock-o" style="color: red; font-size: 25px"></i><br />
+              History</a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-cloud-upload" style="color: red; font-size: 25px"></i><br />
+              Studio</a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-cubes" style="color: red; font-size: 25px"></i><br />
+              Commons</a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-question-circle" style="color: red; font-size: 25px"></i><br />
+              Help</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col">
+        <div class="d-block d-md-none wd-course-navigation-sm-size">
+          <div class="row">
+            <div class="col-2">
+              <a href="/Kanbas/Navigation/screen.html"><i class="fa-solid fa-bars fs-2"></i></a>
+            </div>
+            <div class="col-8">CS5610 Web Development</div>
+            <div class="col-2"></div>
+          </div>
+        </div>
+        <div class="row fs-3 mt-2 ps-0 pb-0">
+          <nav style="--bs-breadcrumb-divider: '>'; padding-left: 25px" aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0">
+              <li class="breadcrumb-item">
+                <a class="text-decoration-none text-muted" href="#">Dashboard</a>
+              </li>
+            </ol>
+          </nav>
+        </div>
+        <hr style="width: 98%" />
+        <div class="d-flex flex-row flex-wrap ms-4">
+          <div class="col-12 fs-4">
+            <span>Published Courses (12)</span>
+          </div>
+          <hr class="w-100" />
+          <div class="col" style="width: 300px">
+            <div class="card">
+              <img src="/images/reactjs.png" class="card-img-top" style="max-height: 150px" />
+              <div class="card-body">
+                <a class="card-title" href="/Kanbas/Courses/Home/screen.html"
+                  style="text-decoration: none; color: navy; font-weight: bold">
+                  CS1234 React JS</a>
+                <p class="card-text">Full Stack software developer</p>
+                <a html="#" class="btn btn-primary"> Go </a>
+              </div>
+            </div>
+          </div>
+          <div class="col" style="width: 300px">
+            <div class="card">
+              <img src="/images/node.png" class="card-img-top" style="max-height: 150px" />
+              <div class="card-body">
+                <a class="card-title" href="/Kanbas/Courses/Home/screen.html"
+                  style="text-decoration: none; color: navy; font-weight: bold">
+                  CS1234 Node JS</a>
+                <p class="card-text">Full Stack software developer</p>
+                <a html="#" class="btn btn-primary"> Go </a>
+              </div>
+            </div>
+          </div>
+          <div class="col" style="width: 300px">
+            <div class="card">
+              <img src="/images/angular.png" class="card-img-top" style="max-height: 150px" />
+              <div class="card-body">
+                <a class="card-title" href="/Kanbas/Courses/Home/screen.html"
+                  style="text-decoration: none; color: navy; font-weight: bold">
+                  CS1234 Angular JS</a>
+                <p class="card-text">Full Stack software developer</p>
+                <a html="#" class="btn btn-primary"> Go </a>
+              </div>
+            </div>
+          </div>
+          <div class="col" style="width: 300px">
+            <div class="card">
+              <img src="/images/net.png" class="card-img-top" style="max-height: 150px" />
+              <div class="card-body">
+                <a class="card-title" href="/Kanbas/Courses/Home/screen.html"
+                  style="text-decoration: none; color: navy; font-weight: bold">
+                  CS1234 .NET</a>
+                <p class="card-text">Full Stack software developer</p>
+                <a html="#" class="btn btn-primary"> Go </a>
+              </div>
+            </div>
+          </div>
+          <div class="col" style="width: 300px">
+            <div class="card">
+              <img src="/images/js.png" class="card-img-top" style="max-height: 150px" />
+              <div class="card-body">
+                <a class="card-title" href="/Kanbas/Courses/Home/screen.html"
+                  style="text-decoration: none; color: navy; font-weight: bold">
+                  CS1234 Java Script</a>
+                <p class="card-text">Full Stack software developer</p>
+                <a html="#" class="btn btn-primary"> Go </a>
+              </div>
+            </div>
+          </div>
+          <div class="col" style="width: 300px">
+            <div class="card">
+              <img src="/images/bootstrap.png" class="card-img-top" style="max-height: 150px" />
+              <div class="card-body">
+                <a class="card-title" href="/Kanbas/Courses/Home/screen.html"
+                  style="text-decoration: none; color: navy; font-weight: bold">
+                  CS1234 Bootstrap</a>
+                <p class="card-text">Full Stack software developer</p>
+                <a html="#" class="btn btn-primary"> Go </a>
+              </div>
+            </div>
+          </div>
+          <div class="col" style="width: 300px">
+            <div class="card">
+              <img src="/images/ts.png" class="card-img-top" style="max-height: 150px" />
+              <div class="card-body">
+                <a class="card-title" href="/Kanbas/Courses/Home/screen.html"
+                  style="text-decoration: none; color: navy; font-weight: bold">
+                  CS1234 TypeScript</a>
+                <p class="card-text">Full Stack software developer</p>
+                <a html="#" class="btn btn-primary"> Go </a>
+              </div>
+            </div>
+          </div>
+          <div class="col" style="width: 300px">
+            <div class="card">
+              <img src="/images/vue.png" class="card-img-top" style="max-height: 150px" />
+              <div class="card-body">
+                <a class="card-title" href="/Kanbas/Courses/Home/screen.html"
+                  style="text-decoration: none; color: navy; font-weight: bold">
+                  CS1234 Vue JS</a>
+                <p class="card-text">Full Stack software developer</p>
+                <a html="#" class="btn btn-primary"> Go </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

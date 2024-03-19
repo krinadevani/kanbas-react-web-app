@@ -1,105 +1,421 @@
-<table width="100%">
-    <tr>
-        <td valign="top">
-            <ul>
-                <li><a href="/Kanbas/Account/Profile/screen.html">
-                        Account</a></li>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Setting Nevigation</title>
+  <link rel="stylesheet" href="../index.css" />
+  <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
+  <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
+  <link href="/public/styles.css" rel="stylesheet" />
+  <link href="/libs/bootstrap/bootstrap.min.css" rel="stylesheet" />
+  <link href="/libs/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container pe-0 ps-0 ms-0">
+    <div class="row w-200">
+      <div class="col-1 wd-bg-black pe-0 d-none d-md-block" style="width: 97px; background-color: black">
+        <ul class="sidebar">
+          <li class="pt-0">
+            <a href="http://northeastern.edu">
+              <img src="/Kanbas/Images/NeuLogo.png" alt="Neu Logo" class="img-thumbnail ps-0 pe-0" style="
+                  background-color: black;
+                  border: none;
+                  height: 60px;
+                  width: 97px;
+                " /></a>
+          </li>
+          <li>
+            <a href="/Kanbas/Account/Profile/screen.html">
+              <i class="fa fa-user" style="font-size: 25px; color: white"></i><br />
+              Account</a>
+          </li>
+          <li>
+            <a href="/Kanbas/Dashboard/screen.html">
+              <i class="fa fa-tachometer" style="color: red; font-size: 25px"></i><br />
+              Dashboard</a>
+          </li>
+          <li class="active">
+            <a href="/Kanbas/Courses/Home/screen.html">
+              <i class="fa fa-book" style="color: red; font-size: 25px"></i><br />
+              Courses</a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-calendar" style="color: red; font-size: 25px"></i><br />
+              Calendar</a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-inbox" style="color: red; font-size: 25px"></i><br />
+              Inbox</a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-clock-o" style="color: red; font-size: 25px"></i><br />
+              History</a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-cloud-upload" style="color: red; font-size: 25px"></i><br />
+              Studio</a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-cubes" style="color: red; font-size: 25px"></i><br />
+              Commons</a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-question-circle" style="color: red; font-size: 25px"></i><br />Help</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col">
+        <div class="d-block d-md-none wd-course-navigation-sm-size">
+          <div class="row">
+            <div class="col-2">
+              <a href="/Kanbas/KanbasNavigation/screen.html"><i class="fa fa-bars fs-2"></i></a>
+            </div>
+            <div class="col-8">CS5610 Web Development</div>
+            <div class="col-2">
+              <a href="/Kanbas/Courses/CourseNavigation/screen.html"><i class="fa fa-chevron-down fs-2"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="row fs-4 mt-4 ps-0 pb-0 d-none d-md-block">
+          <nav style="--bs-breadcrumb-divider: '>'; padding-left: 25px" aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0">
+              <li class="me-4">
+                <i class="fa fa-bars" style="color: #000000"></i>
+              </li>
+              <li class="breadcrumb-item">
+                <a class="text-decoration-none text-danger" href="#">CS5610 Web Development</a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Settings
+              </li>
+            </ol>
+          </nav>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="row">
+            <div class="col-2 d-none d-md-block text-wrap me-5" style="padding-left: 25px">
+              <ul class="wd-course-navigation">
+                <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
+                <li><a href="#">Module</a></li>
+                <li><a href="#">Piazza</a></li>
+                <li><a href="#">Zoom Meetings</a></li>
                 <li>
-                    <a href="#">Dashboard</a>
-                </li>
-                <li>
-                    <a href="/Kanbas/Courses/Home/screen.html">Courses</a>
-                </li>
-                <li>
-                    <a href="#">Calendar</a>
-                </li>
-                <li><a href="#">Inbox</a></li>
-                <li><a href="#">History</a></li>
-                <li><a href="#">Studio</a></li>
-                <li><a href="#">Commons</a></li>
-                <li><a href="#">Help</a></li>
-            </ul>
-        </td>
-        <td valign="top">
-            <ul>
-                <li>
-                    <a href="/Kanbas/Courses/Home/screen.html">
-                        Home</a>
-                </li>
-                <li><a href="#">
-                        Modules</a>
-                </li>
-                <li><a href="#">
-                        Piazza</a>
-                </li>
-                <li><a href="#">Zoom Meeting</a></li>
-                <li><a href="/Kanbas/Courses/Assignments/screen.html">
-                        Assignments</a>
+                  <a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a>
                 </li>
                 <li><a href="#">Quizzes</a></li>
-                <li><a href="/Kanbas/Courses/Grades/screen.html">
-                        Grades</a>
+                <li>
+                  <a href="/Kanbas/Courses/Grades/screen.html">Grades</a>
                 </li>
                 <li><a href="#">People</a></li>
                 <li><a href="#">Panopto Video</a></li>
-                <li><a href="#">Discussions</a></li>
-                <li><a href="#">Announcements</a></li>
-                <li><a href="#">Pages</a></li>
-                <li><a href="#">Files</a></li>
-                <li><a href="#">Rubrics</a></li>
-                <li><a href="#">Outcomes</a></li>
-                <li><a href="#">Collaborations</a></li>
+                <li>
+                  <a href="#">Discussions
+                    <i class="fa fa-eye-slash float-end"></i></a>
+                </li>
+                <li>
+                  <a href="#">Announcements
+                    <i class="fa fa-eye-slash float-end"></i></a>
+                </li>
+                <li>
+                  <a href="#">Pages <i class="fa fa-eye-slash float-end"></i></a>
+                </li>
+                <li>
+                  <a href="#">Files <i class="fa fa-eye-slash float-end"></i></a>
+                </li>
+                <li>
+                  <a href="#">Rubrics <i class="fa fa-eye-slash float-end"></i></a>
+                </li>
+                <li>
+                  <a href="#">Outcomes <i class="fa fa-eye-slash float-end"></i></a>
+                </li>
+                <li>
+                  <a href="#">Collaborations
+                    <i class="fa fa-eye-slash float-end"></i></a>
+                </li>
                 <li><a href="#">Syllabus</a></li>
-                <li><a href="/Kanbas/Courses/Settings/CourseDetails/screen.html">Settings</a></li>
-            </ul>
-        </td>
-        <td valign="top">
-            <table>
-                <tr>
-                    <td><a href="/Kanbas/Courses/Settings/CourseDetails/screen.html">Course Details</a></td>
-                    <td><a href="/Kanbas/Courses/Settings/Navigation/screen.html">Navigation</a></td>
-                </tr>
-            </table>
-            Drag and drop items to reorder them in the course navigation.
+                <li class="active">
+                  <a href="/Kanbas/Courses/Settings/CourseDetails/screen.html">Settings</a>
+                </li>
+              </ul>
+            </div>
 
-            <ul>
-                <li>Home</li>
-                <li>Modules</li>
-                <li>Piazza</li>
-                <li>Zoom Meetings</li>
-                <li>Assignments</li>
-                <li>Quizzes</li>
-                <li>Grades</li>
-                <li>People</li>
-                <li>Panopto Video</li>
-            </ul>
+            <div class="col">
+              <div class="row">
+                <div class="col-12">
+                  <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                      <a class="nav-link text-danger" aria-current="page"
+                        href="/Kanbas/Courses/Settings/CourseDetails/screen.html">Course Details</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-danger" href="#">Sections</a>
+                    </li>
 
-            <br />
+                    <li class="nav-item">
+                      <a class="nav-link active text-dark"
+                        href="/Kanbas/Courses/Settings/Navigation/screen.html">Navigation</a>
+                    </li>
 
-            Drag items here to hide them from students.
-            <br />
-            Disanling most pages will cause students who visit those pages to be redirected to the course home page.
+                    <li class="nav-item">
+                      <a class="nav-link text-danger" href="#">Apps</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-danger" href="#" tabindex="-1" aria-disabled="true">Feature Options</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-danger" href="#" tabindex="-1" aria-disabled="true">Integrations</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-12 mt-4">
+                  Drag and drop items to reorder them in the course
+                  navigation.
+                </div>
+                <div class="table-responsive">
+                  <table class="table table-bordered ms-2 mt-4">
+                    <tbody>
+                      <tr>
+                        <td class="ps-4">Home</td>
+                      </tr>
+                      <tr>
+                        <td class="ps-4">
+                          Modules
+                          <i class="fa fa-ellipsis-v float-end" style="color: #000000"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="ps-4">
+                          Piazza
+                          <i class="fa fa-ellipsis-v float-end" style="color: #000000"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="ps-4">
+                          Zoom Meetings
+                          <i class="fa fa-ellipsis-v float-end" style="color: #000000"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="ps-4">
+                          Assignments
+                          <i class="fa fa-ellipsis-v float-end" style="color: #000000"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="ps-4">
+                          Quizzes
+                          <i class="fa fa-ellipsis-v float-end" style="color: #000000"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="ps-4">
+                          Grades
+                          <i class="fa fa-ellipsis-v float-end" style="color: #000000"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="ps-4">
+                          People
+                          <i class="fa fa-ellipsis-v float-end" style="color: #000000"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="ps-4">
+                          Panopto Video
+                          <i class="fa fa-ellipsis-v float-end" style="color: #000000"></i>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="col-12 mt-4">
+                  <div class="fs-5">
+                    Drag items here to hide them from students.
+                  </div>
+                  <div class="text-muted fs-6">
+                    Disabling most pages will cause students who visit those
+                    pages to be redirtected to the course home page.
+                  </div>
+                </div>
+                <div class="col-12 mt-4">
+                  <div class="table-responsive">
+                    <table class="table table-bordered">
+                      <tbody>
+                        <tr>
+                          <td class="ps-4 text-muted pt-1 pb-0">
+                            <span class="fs-5"> Chat</span>
+                            <br />
+                            <span class="fs-6 ps-3">
+                              Page disabled, won't appear in navigation</span>
+                            <i class="fa fa-ellipsis-v mt-0 float-end" style="color: #000000"></i>
+                          </td>
+                        </tr>
 
-            <ul>
-                <li>Chat <br /> <i>Page disabled, won't appear in navigation</i></li>
-                <li>SCORM <br /> <i>Page disabled, won't appear in navigation</i></li>
-                <li>Attendance <br /> <i>Page disabled, won't appear in navigation</i></li>
-                <li>Barnes and Noble Bookstore <br /> <i>Page disabled, won't appear in navigation</i></li>
-                <li>Digication <br /> <i>Page disabled, won't appear in navigation</i></li>
-                <li>Top Hat <br /> <i>Page disabled, won't appear in navigation</i></li>
-                <li>Syllabus <br /> <i>Page disabled, won't appear in navigation</i></li>
-                <li>Perusall <br /> <i>Page disabled, won't appear in navigation</i></li>
-                <li>Microsoft Teams Meetings <br /> <i>Page disabled, won't appear in navigation</i></li>
-                <li>FACT Reporting and Photo Roster <br /> <i>Page disabled, won't appear in navigation</i></li>
-                <li>Progress Reports (Navigate) <br /> <i>Page disabled, won't appear in navigation</i></li>
-                <li>Microsoft Teams for Canvas <br /> <i>Page disabled, won't appear in navigation</i></li>
-                <li>VHL Central <br /> <i>Page disabled, won't appear in navigation</i></li>
-                <li>Gradescope 1.3 <br /> <i>Page disabled, won't appear in navigation</i></li>
-                <li>Credentials <br /> <i>Page disabled, won't appear in navigation</i></li>
-                <li>iClicker <br /> <i>Page disabled, won't appear in navigation</i></li>
-            </ul>
+                        <tr>
+                          <td class="ps-4 text-muted pt-1 pb-0">
+                            <span class="fs-5"> SCORM</span>
+                            <br />
+                            <span class="fs-6 ps-3">
+                              Page disabled, won't appear in navigation</span>
+                            <i class="fa fa-ellipsis-v mt-0 float-end" style="color: #000000"></i>
+                          </td>
+                        </tr>
 
-            <button>Save</button>
-        </td>
-    </tr>
-</table>
+                        <tr>
+                          <td class="ps-4 text-muted pt-1 pb-0">
+                            <span class="fs-5"> Attendance</span>
+                            <br />
+                            <span class="fs-6 ps-3">
+                              Page disabled, won't appear in navigation</span>
+                            <i class="fa fa-ellipsis-v mt-0 float-end" style="color: #000000"></i>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="ps-4 text-muted pt-1 pb-0">
+                            <span class="fs-5">
+                              Barnes and Noble Bookstore</span>
+                            <br />
+                            <span class="fs-6 ps-3">
+                              Page disabled, won't appear in navigation</span>
+                            <i class="fa fa-ellipsis-v mt-0 float-end" style="color: #000000"></i>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="ps-4 text-muted pt-1 pb-0">
+                            <span class="fs-5"> Digication</span>
+                            <br />
+                            <span class="fs-6 ps-3">
+                              Page disabled, won't appear in navigation</span>
+                            <i class="fa fa-ellipsis-v mt-0 float-end" style="color: #000000"></i>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="ps-4 text-muted pt-1 pb-0">
+                            <span class="fs-5"> Top Hat</span>
+                            <br />
+                            <span class="fs-6 ps-3">
+                              Page disabled, won't appear in navigation</span>
+                            <i class="fa fa-ellipsis-v mt-0 float-end" style="color: #000000"></i>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="ps-4 text-muted pt-1 pb-0">
+                            <span class="fs-5"> Syllabus</span>
+                            <br />
+                            <span class="fs-6 ps-3">
+                              Page disabled, won't appear in navigation</span>
+                            <i class="fa fa-ellipsis-v mt-0 float-end" style="color: #000000"></i>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="ps-4 text-muted pt-1 pb-0">
+                            <span class="fs-5"> Perusall</span>
+                            <br />
+                            <span class="fs-6 ps-3">
+                              Page disabled, won't appear in navigation</span>
+                            <i class="fa fa-ellipsis-v mt-0 float-end" style="color: #000000"></i>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="ps-4 text-muted pt-1 pb-0">
+                            <span class="fs-5">
+                              Microsoft teams Meetings</span>
+                            <br />
+                            <span class="fs-6 ps-3">
+                              Page disabled, won't appear in navigation</span>
+                            <i class="fa fa-ellipsis-v mt-0 float-end" style="color: #000000"></i>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="ps-4 text-muted pt-1 pb-0">
+                            <span class="fs-5">
+                              FACT Reporting and Photo Roster</span>
+                            <br />
+                            <span class="fs-6 ps-3">
+                              Page disabled, won't appear in navigation</span>
+                            <i class="fa fa-ellipsis-v mt-0 float-end" style="color: #000000"></i>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="ps-4 text-muted pt-1 pb-0">
+                            <span class="fs-5">
+                              Progress Reports (Navigate)</span>
+                            <br />
+                            <span class="fs-6 ps-3">
+                              Page disabled, won't appear in navigation</span>
+                            <i class="fa fa-ellipsis-v mt-0 float-end" style="color: #000000"></i>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="ps-4 text-muted pt-1 pb-0">
+                            <span class="fs-5">
+                              Microsoft Teams for Canvas</span>
+                            <br />
+                            <span class="fs-6 ps-3">
+                              Page disabled, won't appear in navigation</span>
+                            <i class="fa fa-ellipsis-v mt-0 float-end" style="color: #000000"></i>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="ps-4 text-muted pt-1 pb-0">
+                            <span class="fs-5"> VHL Central</span>
+                            <br />
+                            <span class="fs-6 ps-3">
+                              Page disabled, won't appear in navigation</span>
+                            <i class="fa fa-ellipsis-v mt-0 float-end" style="color: #000000"></i>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="ps-4 text-muted pt-1 pb-0">
+                            <span class="fs-5"> Gradescope 1.3</span>
+                            <br />
+                            <span class="fs-6 ps-3">
+                              Page disabled, won't appear in navigation</span>
+                            <i class="fa fa-ellipsis-v mt-0 float-end" style="color: #000000"></i>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="ps-4 text-muted pt-1 pb-0">
+                            <span class="fs-5"> Credentials</span>
+                            <br />
+                            <span class="fs-6 ps-3">
+                              Page disabled, won't appear in navigation</span>
+                            <i class="fa fa-ellipsis-v mt-0 float-end" style="color: #000000"></i>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="ps-4 text-muted pt-1 pb-0">
+                            <span class="fs-5"> iClicker</span>
+                            <br />
+                            <span class="fs-6 ps-3">
+                              Page disabled, won't appear in navigation</span>
+                            <i class="fa fa-ellipsis-v mt-0 float-end" style="color: #000000"></i>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div class="col-12">
+                      <button class="btn btn-danger">Save</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+.wd-course-navigation-sm-size {
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+.wd-course-navigation-sm-size a {
+    text-decoration: none;
+    color: white;
+}
+
+.assignment-table .list-group-item {
+    padding-top: 5px;
+    padding-bottom: 0px;
+}
+
+.assignment-table a {
+    text-decoration: none;
+    color: black;
+}
+
+.hr-grow {
+    width: 101%;
+    margin-left: -12px;
+}
+
+.list-group {
+    border-radius: 0px;
+}
