@@ -1,9 +1,18 @@
-import React from "react";
-import { FaCheckCircle, FaEdit, FaGripVertical, FaEllipsisV, FaPlusCircle, FaPlus } from "react-icons/fa";
+import React, {useState} from "react";
+import { FaCheckCircle, FaTrash, FaEdit, FaGripVertical, FaEllipsisV, FaPlusCircle, FaPlus } from "react-icons/fa";
 import { Link, useParams } from "react-router-dom";
-import { assignments } from "../../Database";
+import db from "../../Database";
+import { useSelector, useDispatch } from "react-redux";
+import {
+  deleteAssignment,
+} from "./assignmentsReducer";
+import "./index.css";
 
-const AssignmentSearchBar = () => {
+const AssignmentSearchBar = ({ courseId, assignment }:
+  {
+    courseId: any, assignment: any
+  }) => {
+
   return (
     <div className="pe-0 me-0 ps-0 ms-0">
       <div className="row pt-3 pb-1 ms-0 ps-0">
@@ -18,10 +27,19 @@ const AssignmentSearchBar = () => {
           <a className="btn btn-secondary float-end ms-1">
             <FaEllipsisV className="ms-1" />
           </a>
-          <button type="button" className="btn btn-danger float-end ms-1">
+          <Link
+            key={assignment._id}
+            to={`/Kanbas/Courses/${courseId}/Assignments/AddAssignment`}
+            className="btn btn-danger float-end ms-1"
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
             <FaPlus />
             Assignment
-          </button>
+          </Link>
           <button type="button" className="float-end btn btn-secondary">
             <FaPlus style={{ color: "#ffffff" }} />
             Group
@@ -34,11 +52,35 @@ const AssignmentSearchBar = () => {
 
 function Assignments() {
   const { courseId } = useParams();
-  const assignmentList = assignments.filter(
-    (assignment) => assignment.course === courseId);
+  const assignments = useSelector(
+    (state: any) => state.assignmentsReducer.assignments
+  );
+  const dispatch = useDispatch();
+  const assignment = assignments.filter(
+    (assignment: any) => assignment.course === courseId
+  );
+  const [showConfirmation, setShowConfirmation] = useState(false);
+  const [assignmentIdToDelete, setAssignmentIdToDelete] = useState(null);
+
+  const handleDelete = (id: any) => {
+    setAssignmentIdToDelete(id);
+    setShowConfirmation(true);
+  };
+
+  const confirmDelete = () => {
+    dispatch(deleteAssignment(assignmentIdToDelete));
+    setShowConfirmation(false);
+    setAssignmentIdToDelete(null);
+  };
+
+  const cancelDelete = () => {
+    setShowConfirmation(false);
+    setAssignmentIdToDelete(null);
+  };
+
   return (
     <>
-      {<AssignmentSearchBar />}
+      {<AssignmentSearchBar courseId={courseId} assignment={assignment} />}
       <hr className="hr-grow"></hr>
       <div className="row">
         <ul className="list-group">
@@ -60,8 +102,22 @@ function Assignments() {
                 </span>
               </div>
               <ul className="list-group border-start border-3 border-success" style={{ marginTop: "20px" }}>
-                {assignmentList.map((assignment) => (
+                {assignment.map((assignment: any) => (
                   <li className="list-group-item">
+                    <button
+                       onClick={() => handleDelete(assignment._id)}
+                      className="btn btn-danger float-end"
+                      style={{ fontSize: "12px" }}
+                    >
+                      <FaTrash />
+                    </button>
+                    {showConfirmation && assignmentIdToDelete === assignment._id && (
+                      <div className="confirmation-dialog">
+                        <p>Are you sure you want to remove the assignment?</p>
+                        <button onClick={confirmDelete}>Yes</button>
+                        <button onClick={cancelDelete}>No</button>
+                      </div>
+                    )}
                     <FaGripVertical
                       className="float-start me-3 fs-5"
                       style={{ color: "black" }}
@@ -72,8 +128,7 @@ function Assignments() {
                     />
                     <Link
                       to={`/Kanbas/Courses/${courseId}/Assignments/${assignment._id}`}>
-                        {assignment.title}</Link>
-
+                      {assignment.title}</Link>
                     <span className="float-end">
                       <FaCheckCircle className="text-success" />
                       <FaEllipsisV className="ms-2" />

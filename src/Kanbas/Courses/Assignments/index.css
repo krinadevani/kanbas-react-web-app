@@ -55,3 +55,46 @@
 .color-light {
     color: #878885;
 }
+.confirmation-dialog {
+    position: fixed;
+    top: 20%; /* Adjust this value to control the vertical position */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #343a40; /* Dark background color */
+    color: #fff; /* Text color */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+  }
+  
+  .confirmation-dialog p {
+    margin-bottom: 15px;
+  }
+  
+  .confirmation-dialog button {
+    margin-right: 10px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .confirmation-dialog button:hover {
+    background-color: #4e545b; /* Darker background color on hover */
+  }
+  
+  .confirmation-dialog button:focus {
+    outline: none;
+  }
+  
+  .confirmation-dialog button.yes {
+    background-color: #dc3545; /* Red color for 'Yes' button */
+    color: #fff;
+  }
+  
+  .confirmation-dialog button.no {
+    background-color: #007bff; /* Blue color for 'No' button */
+    color: #fff;
+  }
+  
